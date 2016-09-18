@@ -34,6 +34,8 @@ curl -i -X GET --user admin:secret http://localhost:5000/
 ```
 
 ## App
+Available app: steam, kodi, music
+E.g:
 Start Steam
 ```
 curl -i --user admin:secret -H "Content-Type: application/json" -X POST -d '{"app_name":"steam","state":"start"}' http://localhost:5000/app
