@@ -6,13 +6,13 @@ class Player:
     Constructor
     """
     def __init__(self):
-        self.status = self.isStarted()
+        self.status = self.is_started()
         
     def is_started(self):
         # check number of process
         p = subprocess.Popen("pgrep mplayer", stdout=subprocess.PIPE, shell=True)
         (output, err) = p.communicate()
-        if output =="":
+        if output == "":
                 return False
         else:
                 return True
