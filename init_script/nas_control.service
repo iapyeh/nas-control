@@ -1,0 +1,10 @@
+[Unit]
+Description=Nas control
+
+[Service]
+User=nico
+Type=simple
+ExecStart=/home/nico/Nas_Control/nas_control.py
+
+[Install]
+WantedBy=multi-user.target

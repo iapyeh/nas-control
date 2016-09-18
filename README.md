@@ -17,6 +17,14 @@ Install python libs
 pip install flask
 ```
 
+Install system script
+```
+cp init_script/nas_control.service /etc/systemd/system/nas_control.service
+systemctl daemon-reload
+systemctl start nas_control
+systemctl enable nas_control
+```
+
 ## Usage
 Test with curl
 

@@ -4,7 +4,6 @@
 from flask import Flask, request, abort, make_response, jsonify
 
 import importlib
-from Player import Player
 from Utils.Flask_auth import requires_auth
 
 app = Flask(__name__)
